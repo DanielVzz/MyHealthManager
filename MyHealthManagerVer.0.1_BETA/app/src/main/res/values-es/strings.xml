@@ -15,4 +15,6 @@
     <string name="code_text">Código</string>
     <string name="verify_text">Verificar</string>
     <string name="underconstruction_text">¡Lo sentimos! Esta página aún no esta lista. ¡Estamos trabajando para tí :)!</string>
+    <string name="important_text">¡Importante!</string>
+    <string name="aboutMessage_text">My Health Manager es una aplicación para un Proyecto escolar y no es de ninguna forma un manager de salud.</string>
 </resources>

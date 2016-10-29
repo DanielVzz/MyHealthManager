@@ -39,24 +39,36 @@ public class scanning_screen extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch(item.getItemId()){
-            case 1:
-                //Start Your New Activity
-//                Intent newActivity = new Intent(this,OtherActivity.class );
-//                startActivity(newActivity);
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+//        int itemId = item.getItemId();
+//        R.id.item_scan_code
+//        if(itemId == "itemScanCode"){
+//        }
+//        else if(itemId == "itemCheckStatistics"){
+//        }
+//        else if(itemId == "itemSettings"){
+//
+//        }
+//        else if(itemId == "itemAbout"){
+//            Intent myIntent = new Intent(scanning_screen.this, about.class);
+//            scanning_screen.this.startActivity(myIntent);
+//            onPause();
+//        }
+//        else if(itemId == "itemPremium"){
+//
+//        }
+        String selectedMenuIdString = (String) item.getTitleCondensed();
+        if (selectedMenuIdString.equals("item_scan_code")) {
+
+        } else if (selectedMenuIdString.equals("itemabout")) {
+            Intent myIntent = new Intent(scanning_screen.this, about.class);
+            scanning_screen.this.startActivity(myIntent);
+            onPause();
+        } else if(selectedMenuIdString.equals("itemSettings")){
+
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 
     //endregion

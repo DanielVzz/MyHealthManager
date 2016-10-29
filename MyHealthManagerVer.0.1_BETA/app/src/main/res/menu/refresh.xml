@@ -2,23 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/com.hb4u.myhealthmanager01_beta">
     <item
-        android:id="1"
+        android:id="@+id/item_scan_code"
         android:title="@string/menu_scancode_text"
+        android:titleCondensed="item_scan_code"
         app:showAction="never"></item>
     <item
-        android:id="2"
+        android:id="@+id/itemCheckStatistics"
         android:title="@string/menu_checkstatistics_text"
         app:showAsAction="never"></item>
     <item
-        android:id="3"
+        android:id="@+id/itemSettings"
         android:title="@string/menu_settings_text"
         app:showAction="never"></item>
     <item
-        android:id="4"
+        android:id="@+id/itemAbout"
         android:title="@string/menu_about_text"
+        android:titleCondensed="itemabout"
         app:showAction="never"></item>
     <item
-        android:id="5"
+        android:id="@+id/itemPremium"
         android:title="@string/menu_getpremium_text"
         app:showAction="never"></item>
 </menu>

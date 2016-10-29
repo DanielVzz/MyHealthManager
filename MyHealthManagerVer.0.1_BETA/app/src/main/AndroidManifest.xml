@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scanning_screen"></activity>
+        <activity android:name=".scanning_screen" />
+        <activity android:name=".about"></activity>
     </application>
 
 </manifest>
