@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Health Manager</string>
+    <string name="app_version">Ver.0.1BETA</string>
+    <string name="app_title">My Health Manager</string>
+    <string name="login_text">Log In</string>
+    <string name="username_text">UserName</string>
+    <string name="password_text">Password</string>
+    <string name="forgotpassword_text">Forgot Your Password?</string>
+    <string name="forgotusername_text">Forgot Your Username?</string>
+    <string name="menu_checkstatistics_text">Check My Statistics</string>
+    <string name="menu_settings_text">Settings</string>
+    <string name="menu_about_text">About</string>
+    <string name="menu_getpremium_text">Get Premium</string>
+    <string name="menu_scancode_text">Scan Code</string>
+    <string name="title_activity_scanning_screen">scanning_screen</string>
+    <string name="code_text">Code</string>
+    <string name="verify_text">Verify</string>
+    <string name="underconstruction_text">Sorry, This page is not ready yet! We are working for you! :)</string>
+</resources>

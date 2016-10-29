@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scanning_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hb4u.myhealthmanagerver01_beta.scanning_screen">
+
+    <TextView
+        android:text="@string/code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:id="@+id/lblCode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:background="@drawable/textfieldbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtProductCode"
+        android:layout_alignBaseline="@+id/lblCode"
+        android:layout_alignBottom="@+id/lblCode"
+        android:layout_toEndOf="@+id/lblCode"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:text="@string/verify_text"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnVerifyProductCode"
+        android:layout_marginStart="12dp"
+        android:textSize="8dp"
+        android:layout_alignBaseline="@+id/txtProductCode"
+        android:layout_alignBottom="@+id/txtProductCode"
+        android:layout_toEndOf="@+id/txtProductCode" />
+
+    <TextView
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="@string/underconstruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUnderConstructionSiteMessage"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:id="@+id/imgContentUnderConstruction"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Health Manager</string>
+    <string name="app_version">Ver.0.1BETA</string>
+    <string name="app_title">My Health Manager</string>
+    <string name="login_text">Iniciar Sesión</string>
+    <string name="username_text">Usuario</string>
+    <string name="password_text">Contraseña</string>
+    <string name="forgotpassword_text">¿Olvidaste tu contraseña?</string>
+    <string name="forgotusername_text">¿Olvidaste tu usuario?</string>
+    <string name="menu_checkstatistics_text">Revisar mis estadísticas</string>
+    <string name="menu_settings_text">Configuración</string>
+    <string name="menu_about_text">Acerca de</string>
+    <string name="menu_getpremium_text">Obtener Premium</string>
+    <string name="menu_scancode_text">Escanear Código</string>
+    <string name="code_text">Código</string>
+    <string name="verify_text">Verificar</string>
+    <string name="underconstruction_text">¡Lo sentimos! Esta página aún no esta lista. ¡Estamos trabajando para tí :)!</string>
+</resources>
