@@ -12,15 +12,6 @@
     tools:context="com.hb4u.myhealthmanagerver01_beta.activity_statistics_home">
 
 
-    <TextView
-        android:text="@string/helloText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblHello"
-        android:textSize="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/imageView" />
-
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -51,14 +42,6 @@
         android:layout_alignEnd="@+id/lblSugar"
         android:id="@+id/ProgressBarSugar"/>
 
-    <TextView
-        android:text="@string/fatText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/lblSugar"
-        android:layout_alignStart="@+id/imageView"
-        android:id="@+id/lblFat" />
-
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="30dp"
@@ -72,16 +55,6 @@
         android:layout_above="@+id/lblFat"
         android:layout_alignStart="@+id/lblFat" />
 
-    <TextView
-        android:text="@string/saturatedFatText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:id="@+id/lblSaturatedFat"
-        android:layout_alignBaseline="@+id/lblFat"
-        android:layout_alignBottom="@+id/lblFat"
-        android:layout_toEndOf="@+id/lblFat" />
-
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="30dp"
@@ -94,15 +67,6 @@
         android:layout_alignTop="@+id/ProgressBarFat"
         android:layout_alignEnd="@+id/imageView" />
 
-    <TextView
-        android:text="@string/sodiumText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblSaturatedFat"
-        android:layout_toEndOf="@+id/lblSaturatedFat"
-        android:layout_marginStart="11dp"
-        android:id="@+id/lblSodium" />
-
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="30dp"
@@ -111,7 +75,44 @@
         android:progress="9"
         android:progressDrawable="@drawable/progress_drawable"
         android:id="@+id/ProgressBarSodium"
-        android:layout_alignTop="@+id/ProgressBarSaturatedFat"
-        android:layout_alignStart="@+id/lblSodium" />
+        android:layout_alignTop="@+id/ProgressBarSugar"
+        android:layout_toEndOf="@+id/ProgressBarSaturatedFat"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:text="@string/sodiumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSodium"
+        android:layout_alignBaseline="@+id/lblSaturatedFat"
+        android:layout_alignBottom="@+id/lblSaturatedFat"
+        android:layout_alignStart="@+id/ProgressBarSodium" />
+
+    <TextView
+        android:text="@string/saturatedFatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSaturatedFat"
+        android:layout_below="@+id/ProgressBarFat"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:text="@string/fatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblFat"
+        android:layout_alignBaseline="@+id/lblSugar"
+        android:layout_alignBottom="@+id/lblSugar"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:text="@string/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblHello"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/ProgressBarFat" />
 
 </RelativeLayout>
