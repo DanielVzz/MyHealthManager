@@ -24,4 +24,5 @@
     <string name="sodiumText">Sodio</string>
     <string name="settingsText">Configuración</string>
     <string name="getPremiumText">Obtener Premium</string>
+    <string name="scan">Escanear</string>
 </resources>

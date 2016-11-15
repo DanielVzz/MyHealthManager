@@ -11,10 +11,19 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class scanning_screen extends AppCompatActivity {
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
+public class scanning_screen extends AppCompatActivity implements OnClickListener {
 
     //region variables
+    private Button scanBtn;
+    private TextView formatTxt, contentTxt;
     //endregion
 
     //region PageMethods
@@ -26,7 +35,13 @@ public class scanning_screen extends AppCompatActivity {
         myActionBar.setHomeButtonEnabled(true);
         myActionBar.setDisplayHomeAsUpEnabled(true);
         myActionBar.setDisplayShowHomeEnabled(true);
+        scanBtn = (Button)findViewById(R.id.scan_button);
+        formatTxt = (TextView)findViewById(R.id.scan_format);
+        contentTxt = (TextView)findViewById(R.id.scan_content);
+        scanBtn.setOnClickListener(this);
     }
+
+
     //endregion
 
     //region MenuMethods
@@ -70,6 +85,14 @@ public class scanning_screen extends AppCompatActivity {
     //endregion
 
     //region ButtonEvents
+    public void onClick(View v){
+        if(v.getId()== R.id.scan_button){
+            IntentIntegrator scanIntegrator = new IntentIntegrator(this);
+            scanIntegrator.initiateScan();
+        }
+    }
     //endregion
+
+
 
 }

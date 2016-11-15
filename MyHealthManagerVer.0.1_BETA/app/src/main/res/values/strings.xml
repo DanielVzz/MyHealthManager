@@ -25,4 +25,5 @@
     <string name="sodiumText">Sodium</string>
     <string name="settingsText">Settings</string>
     <string name="getPremiumText">Get Premium</string>
+    <string name="scan">Scan</string>
 </resources>
