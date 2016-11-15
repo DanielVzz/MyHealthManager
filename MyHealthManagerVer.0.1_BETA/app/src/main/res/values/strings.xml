@@ -18,4 +18,9 @@
     <string name="underconstruction_text">Sorry, This page is not ready yet! We are working for you! :)</string>
     <string name="important_text">Important!</string>
     <string name="aboutMessage_text">My Health Manager is a Schoolar Project App and it is not by any means a real health manager.</string>
+    <string name="helloText">Hello</string>
+    <string name="sugarText">Sugar</string>
+    <string name="fatText">Fat</string>
+    <string name="saturatedFatText">Saturated Fat</string>
+    <string name="sodiumText">Sodium</string>
 </resources>

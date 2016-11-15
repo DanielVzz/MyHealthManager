@@ -17,4 +17,9 @@
     <string name="underconstruction_text">¡Lo sentimos! Esta página aún no esta lista. ¡Estamos trabajando para tí :)!</string>
     <string name="important_text">¡Importante!</string>
     <string name="aboutMessage_text">My Health Manager es una aplicación para un Proyecto escolar y no es de ninguna forma un manager de salud.</string>
+    <string name="helloText">Hola</string>
+    <string name="sugarText">Azúcar</string>
+    <string name="fatText">Grasas</string>
+    <string name="saturatedFatText">Grasas Saturadas</string>
+    <string name="sodiumText">Sodio</string>
 </resources>

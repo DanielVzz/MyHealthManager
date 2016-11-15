@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".scanning_screen" />
-        <activity android:name=".about"></activity>
+        <activity android:name=".about" />
+        <activity android:name=".activity_statistics_home"></activity>
     </application>
 
 </manifest>

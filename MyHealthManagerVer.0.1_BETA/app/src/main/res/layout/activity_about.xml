@@ -19,16 +19,6 @@
         android:id="@+id/lblVersion" />
 
     <TextView
-        android:text="@string/important_text"
-        android:textSize="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:id="@+id/lblImportant"
-        android:layout_below="@+id/lblVersion"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="@string/aboutMessage_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,4 +26,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="71dp"
         android:id="@+id/lblAboutMessage" />
+
+    <TextView
+        android:text="@string/important_text"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/lblImportant"
+        android:layout_below="@+id/lblVersion"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

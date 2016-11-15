@@ -67,6 +67,10 @@ public class scanning_screen extends AppCompatActivity {
             onPause();
         } else if(selectedMenuIdString.equals("itemSettings")){
 
+        }else if(selectedMenuIdString.equals("item_check_statistics")){
+            Intent myIntent = new Intent(scanning_screen.this, activity_statistics_home.class);
+            scanning_screen.this.startActivity(myIntent);
+            onPause();
         }
         return super.onOptionsItemSelected(item);
     }
