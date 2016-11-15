@@ -20,6 +20,8 @@
     <string name="helloText">Hola</string>
     <string name="sugarText">Azúcar</string>
     <string name="fatText">Grasas</string>
-    <string name="saturatedFatText">Grasas Saturadas</string>
+    <string name="saturatedFatText">G. Saturadas</string>
     <string name="sodiumText">Sodio</string>
+    <string name="settingsText">Configuración</string>
+    <string name="getPremiumText">Obtener Premium</string>
 </resources>

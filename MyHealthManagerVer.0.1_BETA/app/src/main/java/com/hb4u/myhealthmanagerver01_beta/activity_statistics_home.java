@@ -31,19 +31,29 @@ public class activity_statistics_home extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-
         String selectedMenuIdString = (String) item.getTitleCondensed();
         if (selectedMenuIdString.equals("item_scan_code")) {
-
-        } else if (selectedMenuIdString.equals("itemabout")) {
+            Intent myIntent = new Intent(activity_statistics_home.this, scanning_screen.class);
+            activity_statistics_home.this.startActivity(myIntent);
+            onPause();
+        }else if(selectedMenuIdString.equals("item_check_statistics")){
+//            Intent myIntent = new Intent(scanning_screen.this, activity_statistics_home.class);
+//            scanning_screen.this.startActivity(myIntent);
+//            onPause();
+        }
+        else if(selectedMenuIdString.equals("item_settings")){
+            Intent myIntent = new Intent(activity_statistics_home.this, settings.class);
+            activity_statistics_home.this.startActivity(myIntent);
+            onPause();
+        }
+        else if (selectedMenuIdString.equals("itemabout")) {
             Intent myIntent = new Intent(activity_statistics_home.this, about.class);
             activity_statistics_home.this.startActivity(myIntent);
             onPause();
-        } else if(selectedMenuIdString.equals("itemSettings")){
-
-        }else if(selectedMenuIdString.equals("itemCheckStatistics")){
-
+        } else if(selectedMenuIdString.equals("item_getpremium")){
+            Intent myIntent = new Intent(activity_statistics_home.this, get_premium.class);
+            activity_statistics_home.this.startActivity(myIntent);
+            onPause();
         }
         return super.onOptionsItemSelected(item);
     }

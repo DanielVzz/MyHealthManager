@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".scanning_screen" />
         <activity android:name=".about" />
-        <activity android:name=".activity_statistics_home"></activity>
+        <activity android:name=".activity_statistics_home" />
+        <activity android:name=".settings" />
+        <activity android:name=".get_premium"></activity>
     </application>
 
 </manifest>

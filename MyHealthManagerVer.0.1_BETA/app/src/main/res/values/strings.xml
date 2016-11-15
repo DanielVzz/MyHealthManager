@@ -23,4 +23,6 @@
     <string name="fatText">Fat</string>
     <string name="saturatedFatText">Saturated Fat</string>
     <string name="sodiumText">Sodium</string>
+    <string name="settingsText">Settings</string>
+    <string name="getPremiumText">Get Premium</string>
 </resources>

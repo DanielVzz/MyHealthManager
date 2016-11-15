@@ -25,6 +25,7 @@ public class Login extends AppCompatActivity {
     //endregion
 
     //region MenuMethods
+
     //endregion
 
     //region ButtonEvents

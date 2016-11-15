@@ -40,35 +40,27 @@ public class scanning_screen extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-//        int itemId = item.getItemId();
-//        R.id.item_scan_code
-//        if(itemId == "itemScanCode"){
-//        }
-//        else if(itemId == "itemCheckStatistics"){
-//        }
-//        else if(itemId == "itemSettings"){
-//
-//        }
-//        else if(itemId == "itemAbout"){
-//            Intent myIntent = new Intent(scanning_screen.this, about.class);
-//            scanning_screen.this.startActivity(myIntent);
-//            onPause();
-//        }
-//        else if(itemId == "itemPremium"){
-//
-//        }
         String selectedMenuIdString = (String) item.getTitleCondensed();
         if (selectedMenuIdString.equals("item_scan_code")) {
-
-        } else if (selectedMenuIdString.equals("itemabout")) {
+//            Intent myIntent = new Intent(scanning_screen.this, scanning_screen.class);
+//            scanning_screen.this.startActivity(myIntent);
+//            onPause();
+        }else if(selectedMenuIdString.equals("item_check_statistics")){
+            Intent myIntent = new Intent(scanning_screen.this, activity_statistics_home.class);
+            scanning_screen.this.startActivity(myIntent);
+            onPause();
+        }
+        else if(selectedMenuIdString.equals("item_settings")){
+            Intent myIntent = new Intent(scanning_screen.this, settings.class);
+            scanning_screen.this.startActivity(myIntent);
+            onPause();
+        }
+        else if (selectedMenuIdString.equals("itemabout")) {
             Intent myIntent = new Intent(scanning_screen.this, about.class);
             scanning_screen.this.startActivity(myIntent);
             onPause();
-        } else if(selectedMenuIdString.equals("itemSettings")){
-
-        }else if(selectedMenuIdString.equals("item_check_statistics")){
-            Intent myIntent = new Intent(scanning_screen.this, activity_statistics_home.class);
+        } else if(selectedMenuIdString.equals("item_getpremium")){
+            Intent myIntent = new Intent(scanning_screen.this, get_premium.class);
             scanning_screen.this.startActivity(myIntent);
             onPause();
         }
