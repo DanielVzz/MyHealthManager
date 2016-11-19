@@ -1,5 +1,6 @@
 package com.hb4u.myhealthmanagerver01_beta;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,8 @@ public class scanning_screen extends AppCompatActivity implements OnClickListene
     //region PageMethods
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ViewPager viewPager;
+        activity_custom_swipe  customSwip;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanning_screen);
         ActionBar myActionBar = getSupportActionBar();
@@ -91,6 +94,10 @@ public class scanning_screen extends AppCompatActivity implements OnClickListene
             onPause();
         } else if(selectedMenuIdString.equals("item_getpremium")){
             Intent myIntent = new Intent(scanning_screen.this, get_premium.class);
+            scanning_screen.this.startActivity(myIntent);
+            onPause();
+        }else if(selectedMenuIdString.equals("item_demo_mode")){
+            Intent myIntent = new Intent(scanning_screen.this, activity_demo_mode.class);
             scanning_screen.this.startActivity(myIntent);
             onPause();
         }

@@ -12,6 +12,9 @@ import android.widget.ProgressBar;
 import com.hb4u.myhealthmanagerver01_beta.classes.Users;
 import com.hb4u.myhealthmanagerver01_beta.rest_adapters.UsersRestAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class activity_statistics_home extends AppCompatActivity {
 
     //region variables
@@ -22,31 +25,29 @@ public class activity_statistics_home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistics_home);
-        UsersRestAdapter userRepo = new UsersRestAdapter();
-        new UsersRestAdapter().execute("http://192.168.1.74:53494/CalculatorWebService.asmx/");
-
-        Handler mHandler = new Handler();
+        //UsersRestAdapter userRepo = new UsersRestAdapter();
 
         final ProgressBar pBarSugar = (ProgressBar) findViewById(R.id.ProgressBarSugar);
-        pBarSugar.setProgress(50);
-
         final ProgressBar pBarFat = (ProgressBar) findViewById(R.id.ProgressBarFat);
-        pBarSugar.setProgress(50);
-
         final ProgressBar pBarSatFat = (ProgressBar) findViewById(R.id.ProgressBarSaturatedFat);
-        pBarSugar.setProgress(50);
-
         final ProgressBar pBarSodium = (ProgressBar) findViewById(R.id.ProgressBarSodium);
-        pBarSugar.setProgress(50);
+        List<ProgressBar> myHealthProgressBars = new ArrayList<ProgressBar>();
+        myHealthProgressBars.add(pBarSugar);
+        myHealthProgressBars.add(pBarFat);
+        myHealthProgressBars.add(pBarSatFat);
+        myHealthProgressBars.add(pBarSodium);
 
-        mHandler.post(new Runnable() {
-            public void run() {
-                pBarSugar.setProgress(50);
-                pBarSodium.setProgress(50);
-                pBarFat.setProgress(50);
-                pBarSatFat.setProgress(50);
-            }
-        });
+        new UsersRestAdapter(myHealthProgressBars).execute();
+
+//        Handler mHandler = new Handler();
+//        mHandler.post(new Runnable() {
+//            public void run() {
+//                //pBarSugar.setProgress(50);
+//                pBarSodium.setProgress(50);
+//                pBarFat.setProgress(50);
+//                pBarSatFat.setProgress(50);
+//            }
+//        });
     }
     //endregion
 
